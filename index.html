@@ -23,7 +23,7 @@
 
         <Script>
 		
-            let scanner = new Instascan.Scanner({video: document.getElementById('preview')});
+            let scanner = new Instascan.Scanner({video: document.getElementById('preview'), mirror: false // prevents the video to be mirrored});
 	    //Detect user's cameras
             Instascan.Camera.getCameras().then(function(cameras){
                 //If a camera is detected
